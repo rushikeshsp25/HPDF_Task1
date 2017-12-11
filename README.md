@@ -13,7 +13,7 @@ To run this project on your local machine follow below given steps:
 4] To run the application you can either use the flask command or python’s -m switch with Flask.
 
     
-    Before you can do that you need to tell your terminal the application to work with by exporting the FLASK_APP environment                          variable:
+    Before you can do that you need to tell your terminal the application to work with by exporting the FLASK_APP environment variable               
     $ export FLASK_APP=hello.py
     $ flask run
      * Running on http://127.0.0.1:5000/
@@ -25,7 +25,9 @@ To run this project on your local machine follow below given steps:
     $ python -m flask run
      * Running on http://127.0.0.1:5000/
      
-5]Open Your Favourite Browser -------------------------------------------------------------------------------------------------------------------------------
+5]Open Your Favourite Browser 
+
+-------------------------------------------------------------------------------------------------------------------------------
 
 The following tasks are demonstrated:
 
