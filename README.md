@@ -3,10 +3,15 @@ This repository contains Hasura Product Developement Felloship Week 1 Task
 This is implemented using Python based web framework -> Flask
 
 To run this project on your local machine follow below given steps:
+
 1] Clone this repo in your local machine
+
 2] Install flask on your system (http://flask.pocoo.org/docs/0.12/installation/)
+
 3] Open terminal and cd to HPDF_Task1
-4] To run the application you can either use the flask command or python’s -m switch with Flask. 
+
+4] To run the application you can either use the flask command or python’s -m switch with Flask.
+
     
     Before you can do that you need to tell your terminal the application to work with by exporting the FLASK_APP environment                          variable:
     $ export FLASK_APP=hello.py
@@ -19,7 +24,7 @@ To run this project on your local machine follow below given steps:
     $ export FLASK_APP=hello.py
     $ python -m flask run
      * Running on http://127.0.0.1:5000/
-5]Open up Browser
+     
 -------------------------------------------------------------------------------------------------------------------------------
 
 The following tasks are demonstrated:
