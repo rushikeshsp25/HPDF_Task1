@@ -1,23 +1,44 @@
 # HPDF_Task1
 This repository contains Hasura Product Developement Felloship Week 1 Task
+This is implemented using Python based web framework -> Flask
 
-The following tasks will have to be demonstrated:
+To run this project on your local machine follow below given steps:
+1] Clone this repo in your local machine
+2] Install flask on your system (http://flask.pocoo.org/docs/0.12/installation/)
+3] Open terminal and cd to HPDF_Task1
+4] To run the application you can either use the flask command or python’s -m switch with Flask. 
+    
+    Before you can do that you need to tell your terminal the application to work with by exporting the FLASK_APP environment                          variable:
+    $ export FLASK_APP=hello.py
+    $ flask run
+     * Running on http://127.0.0.1:5000/
 
-A simple hello-world at http://localhost:8080/ that displays a simple string like "Hello World - Arpit"; replace "Arpit" with your own first name).
+    If you are on Windows you need to use set instead of export.
+    Alternatively you can use python -m flask:
 
-Add a route, for e.g. http://localhost:8080/authors, which:
+    $ export FLASK_APP=hello.py
+    $ python -m flask run
+     * Running on http://127.0.0.1:5000/
+5]Open up Browser
+-------------------------------------------------------------------------------------------------------------------------------
+
+The following tasks are demonstrated:
+1] http://localhost:5000/ that displays a simple string like "Hello World - Rushikesh"
+
+2] Add a route, for e.g. http://localhost:5000/authors, which:
 fetches a list of authors from a request to https://jsonplaceholder.typicode.com/users
 fetches a list of posts from a request to https://jsonplaceholder.typicode.com/posts
 Respond with only a list of authors and the count of their posts (a newline for each author).
 
-Set a simple cookie (if it has not already been set) at http://localhost:8080/setcookie with the following values: name=<your-first-name> and age=<your-age>.
+3] Set a simple cookie (if it has not already been set) at http://localhost:5000/setcookie with the following values: 
+name=<your-first-name> and age=<your-age>.
 
-Fetch the set cookie with http://localhost:8080/getcookies and display the stored key-values in it.
+4] Fetch the set cookie with http://localhost:5000/getcookies and display the stored key-values in it.
 
-Deny requests to your http://localhost:8080/robots.txt page. (or you can use the response at http://httpbin.org/deny if needed)
+5] Deny requests to your http://localhost:5000/robots.txt page. 
 
-Render an HTML page at http://localhost:8080/html or an image at http://localhost:8080/image.
+6] Render an HTML page at http://localhost:5000/html or an image at http://localhost:5000/image.
 
-A text box at http://localhost:8080/input which sends the data as POST to any endpoint of your choice. This endpoint should log the received the received to stdout.
+7] A text box at http://localhost:5000/input which sends the data as POST to any endpoint of your choice. This endpoint should log the received the received to stdout.
     
-Please note that http://localhost:8080/ is just an example, you can run the flask, express web-servers at their default ports on your local machine. You will receive more instructions on deploying your app after the deadline.
+NOTE: Flask server runs at 127.0.0.1:5000
