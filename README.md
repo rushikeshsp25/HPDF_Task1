@@ -25,9 +25,10 @@ To run this project on your local machine follow below given steps:
     $ python -m flask run
      * Running on http://127.0.0.1:5000/
      
--------------------------------------------------------------------------------------------------------------------------------
+5]Open Your Favourite Browser -------------------------------------------------------------------------------------------------------------------------------
 
 The following tasks are demonstrated:
+
 1] http://localhost:5000/ that displays a simple string like "Hello World - Rushikesh"
 
 2] Add a route, for e.g. http://localhost:5000/authors, which:
@@ -36,7 +37,7 @@ fetches a list of posts from a request to https://jsonplaceholder.typicode.com/p
 Respond with only a list of authors and the count of their posts (a newline for each author).
 
 3] Set a simple cookie (if it has not already been set) at http://localhost:5000/setcookie with the following values: 
-name=<your-first-name> and age=<your-age>.
+name=rushikesh and age=21.
 
 4] Fetch the set cookie with http://localhost:5000/getcookies and display the stored key-values in it.
 
