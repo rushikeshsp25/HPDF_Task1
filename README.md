@@ -26,7 +26,7 @@ To run this project on your local machine follow below given steps:
     $ python -m flask run
      * Running on http://127.0.0.1:5000/
      
-5]Open Your Favourite Browser 
+5] Open Your Favourite Browser 
 
 -------------------------------------------------------------------------------------------------------------------------------
 
