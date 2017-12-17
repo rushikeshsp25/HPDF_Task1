@@ -1,7 +1,7 @@
 # HPDF_Task1
 This repository contains Hasura Product Developement Felloship Week 1 Task
 
-This is implemented using Python based web framework -> Flask
+This is implemented using Python(2.x version) based web framework -> Flask
 
 To run this project on your local machine follow below given steps:
 
