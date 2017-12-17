@@ -4,12 +4,40 @@ app=Flask(__name__)
 @app.route('/')
 def hello_world():
 	return 'Hello World - Rushikesh'
-	
+
+auth_dict={}
+post_dict={}
+
+def make_req():
+    auth_dict.clear()
+    post_dict.clear()
+    authors=urllib.urlopen('https://jsonplaceholder.typicode.com/users').read().decode()
+    auths=json.loads(authors)
+    for i in auths:
+        auth_dict[i['id']]=i['name']
+    posts=urllib.urlopen('https://jsonplaceholder.typicode.com/posts').read().decode()
+    post=json.loads(posts)
+    for i in post:
+        try:
+            post_dict[i['userId']]+=1
+        except:
+            post_dict[i['userId']]=1
+    return
+
+def join():
+    make_req()
+    str1=""
+    for i in auth_dict.keys():
+        try:
+            str1+="Author : "+str(auth_dict[i]+ "<br/>" + "Number of posts : "+str(post_dict[i])+"<br/>")
+        except:
+            pass
+    return str1
 
 @app.route('/authors')
-def authors():
-	return 'Tried very hard but not able to complete this'
-	
+def parse():
+    temp = join()
+    return temp	
 	
 @app.route('/setcookie')
 def setcookie():
