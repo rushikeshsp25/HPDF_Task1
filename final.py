@@ -70,7 +70,7 @@ def html():
 	
 @app.route('/image')
 def image():
-	return render_template('output.html',name='image')
+	return send_file('hasura1.jpeg',mimetype='image/gif')
 	
 	
 @app.route('/input',methods = ['POST', 'GET'])
